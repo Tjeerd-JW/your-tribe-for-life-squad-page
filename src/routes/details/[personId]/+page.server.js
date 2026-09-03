@@ -4,5 +4,5 @@ export async function load({ fetch, params }) {
 	);
 	const data = await res.json();
 
-	return { person: data.data };
+	return { person: data.data[0] };
 }
