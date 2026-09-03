@@ -4,7 +4,7 @@
 
 <div class="person-list">
     {#each persons as person}
-        <a href="#">
+        <a href="/details/{person.id}">
             {#if person.mugshot}
                 <img
                     src="https://fdnd.directus.app/assets/{person.mugshot}?width=250"
@@ -24,8 +24,16 @@
     .person-list {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(150px, 160px));
-        gap: .5rem 0;
+        gap: 0.5rem 0;
         justify-content: center;
+        overflow: scroll;
+        /* max-height: clamp(300px, 75dvh, 550px); */
+
+        grid-column: 1 /-1;
+        @media (min-width: 950px) {
+            grid-row: 2;
+            grid-column: 2;
+        }
         a {
             img {
                 aspect-ratio: 1/1;
