@@ -1,10 +1,10 @@
 <script>
     let {data} = $props();
 
-    console.log(data.data)
+    console.log(data.person)
 </script>
 
-<h1>{data}</h1>
+<h1>{data.person.nickname}</h1>
 <img >
 <p>
     description
