@@ -31,5 +31,6 @@
 <style>
 	.person-details {
 		display: flex;
+		justify-content: space-evenly;
 	}
 </style>
