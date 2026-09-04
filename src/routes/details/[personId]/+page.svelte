@@ -1,7 +1,5 @@
 <script>
 	let { data } = $props();
-
-	console.log(data.person);
 </script>
 
 <main class="person-details">
