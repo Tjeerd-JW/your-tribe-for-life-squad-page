@@ -11,7 +11,6 @@
 			width="300"
 		/>
 	</section>
-	<div>lijst van mensen en hun afbeeldingen</div>
 </main>
 <footer>
 	<div>
