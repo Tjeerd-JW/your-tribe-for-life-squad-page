@@ -12,20 +12,16 @@
 </svelte:head>
 
 <main>
-	<div class="select-screen">
+	<section class="select-screen">
 		<h1 class="name">Choose your character</h1>
 		<div class="detail-img">
-			<!-- <img
-                src="https://static.wikitide.net/deathbattlewiki/c/c8/Portrait.ramattra.png"
-                alt="placeholder"
-            /> -->
 			{@render children()}
 		</div>
 		<List class="detail-list" {persons} />
-		<div class="details">
+		<section class="details">
 			<h2>details komen hier</h2>
-		</div>
-	</div>
+		</section>
+	</section>
 </main>
 
 <style>

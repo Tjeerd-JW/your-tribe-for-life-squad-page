@@ -5,4 +5,4 @@
     const persons = data.persons;
 </script>
 
-<h1>Ik ben maar een page</h1>
+<h2>Selecteer een persoon uit de lijst</h2>
