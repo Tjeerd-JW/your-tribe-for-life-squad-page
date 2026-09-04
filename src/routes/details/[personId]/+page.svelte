@@ -3,15 +3,15 @@
 </script>
 
 <main class="person-details">
-	<div>
+	<section>
 		<h1>{data.person.nickname}</h1>
 		<img
 			src="https://fdnd.directus.app/assets/{data.person.mugshot}"
 			alt="foto van {data.person.name}"
 			width="300"
 		/>
-	</div>
-	<div>afbeeldingen</div>
+	</section>
+	<div>lijst van mensen en hun afbeeldingen</div>
 </main>
 <footer>
 	<div>
