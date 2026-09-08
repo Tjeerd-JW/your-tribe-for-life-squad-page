@@ -25,6 +25,9 @@
 		</p>
 	</div>
 	<a href={data.person.website} target="_blank">website</a>
+	<a href="https://github.com/{data.person.github_handle}" target="_blank"
+		>{data.person.github_handle}</a
+	>
 </footer>
 
 <style>
