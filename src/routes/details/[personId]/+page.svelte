@@ -24,10 +24,19 @@
 			{data.person.fav_game ?? "geen favoriete game"}
 		</p>
 	</div>
-	<a href={data.person.website} target="_blank">website</a>
-	<a href="https://github.com/{data.person.github_handle}" target="_blank"
-		>{data.person.github_handle}</a
-	>
+
+	{#if data.person.website}
+		<a href={data.person.website} target="_blank">website</a>
+	{:else}
+		<p>ik heb geen website</p>
+	{/if}
+	{#if data.person.github_handle}
+		<a href="https://github.com/{data.person.github_handle}" target="_blank">
+			{data.person.github_handle}
+		</a>
+	{:else}
+		<p>geen github naam ingevuld</p>
+	{/if}
 </footer>
 
 <style>
