@@ -8,7 +8,7 @@
 
 		{#if data.person.mugshot}
 			<img
-				src="https://fdnd.directus.app/assets/{data.person.mugshot}"
+				src="https://fdnd.directus.app/assets/{data.person.mugshot}?width=300"
 				alt="foto van {data.person.name}"
 				width="300"
 			/>
