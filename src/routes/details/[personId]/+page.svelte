@@ -15,16 +15,16 @@
 <footer>
 	<div>
 		<p>
-			{data.person.bio}
+			{data.person.bio ?? "ik heb geen bio ingevuld"}
 		</p>
 		<p>
-			{data.person.fav_hobby}
+			{data.person.fav_hobby ?? "geen hobbies"}
 		</p>
 		<p>
-			{data.person.fav_game}
+			{data.person.fav_game ?? "geen favoriete game"}
 		</p>
 	</div>
-	<a href={data.person.website}>website</a>
+	<a href={data.person.website} target="_blank">website</a>
 </footer>
 
 <style>
