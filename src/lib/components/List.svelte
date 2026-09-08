@@ -5,10 +5,13 @@
 <ul class="person-list">
     {#each persons as person}
         <li>
-            <a href="/details/{person.id}" style="--fav-color: {person.fav_color}">
+            <a
+                href="/details/{person.id}"
+                style="--fav-color: {person.fav_color}"
+            >
                 {#if person.mugshot}
                     <img
-                        src="https://fdnd.directus.app/assets/{person.mugshot}?width=250"
+                        src="https://fdnd.directus.app/assets/{person.mugshot}?width=300"
                         alt="foto van {person.name}"
                     />
                 {:else}
@@ -29,8 +32,10 @@
         gap: 0.5rem 0;
         justify-content: center;
         grid-column: 1 /-1;
+        padding: 80px 20px;
+
         @media (min-width: 950px) {
-            height: 90dvh;
+            height: 85dvh;
             overflow: auto;
             grid-row: 2;
             grid-column: 2;
@@ -38,20 +43,25 @@
         li {
             list-style: none;
             a {
-                &:focus{
-                    outline: 4px solid var(--fav-color);
-                    transform: scale(2);
+                display: block;
+                transition: ease-in-out 0.2s;
+
+                &:focus img {
+                    outline: 2px solid var(--fav-color);
+                    transform: scale(1.1);
                 }
-                &:hover{
-                    transform: scale(2);
+                &:hover img {
+                    transform: scale(1.1);
                 }
 
                 img {
                     aspect-ratio: 1/1;
                     object-fit: cover;
                     width: clamp(125px, 100%, 150px);
+                    outline: var(--fav-color);
                     display: grid;
                     margin: 0 auto;
+                    transition: inherit;
                 }
             }
         }
