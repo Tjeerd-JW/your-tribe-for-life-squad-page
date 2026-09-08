@@ -5,11 +5,20 @@
 <main class="person-details">
 	<section>
 		<h1>{data.person.nickname}</h1>
-		<img
-			src="https://fdnd.directus.app/assets/{data.person.mugshot}"
-			alt="foto van {data.person.name}"
-			width="300"
-		/>
+
+		{#if data.person.mugshot}
+			<img
+				src="https://fdnd.directus.app/assets/{data.person.mugshot}"
+				alt="foto van {data.person.name}"
+				width="300"
+			/>
+		{:else}
+			<img
+				src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/8/86/Icon-Lifeweaver.png/revision/latest/scale-to-width-down/250?cb=20230411181321"
+				alt="foto van {data.person.name}"
+				width="300"
+			/>
+		{/if}
 	</section>
 </main>
 <footer>
