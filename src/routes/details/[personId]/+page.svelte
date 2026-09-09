@@ -4,7 +4,11 @@
 
 <main class="person-details">
 	<section>
-		<h1>{data.person.nickname}</h1>
+		{#if data.person.nickname}
+			<h1>{data.person.nickname}</h1>
+		{:else}
+			<h1>ik heb geen nickname</h1>
+		{/if}
 
 		{#if data.person.mugshot}
 			<img
