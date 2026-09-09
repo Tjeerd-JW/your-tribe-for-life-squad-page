@@ -48,9 +48,16 @@ html {
 
 }
 
+* {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: var(--line-height);
+}
+
 
 body {
-    margin: 0;
     background: var(--background-color);
     color: var(--font-color);
     font-family: var(--font-family);
