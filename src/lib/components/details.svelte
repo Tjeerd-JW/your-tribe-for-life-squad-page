@@ -1,6 +1,6 @@
 <script>
-	let { data } = $props();
-	let person = $derived(data.person);
+	let { personData } = $props();
+	let person = $derived(personData.person);
 </script>
 
 <footer>
