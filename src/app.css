@@ -1,3 +1,81 @@
-body{
+html {
+    /* colors */
+    --primary-color: #A675F5;
+    --secondary-color: #ECECEC;
+    --font-color: #050542;
+    --background-color: #FFFFFF;
+    --white: #FFFFFF;
+
+    /* fonts */
+    --font-family: "Inter", sans-serif;
+
+    /* 14px */
+    --font-size-sm: 0.875rem;
+    /* 16px */
+    --font-size-md: 1rem;
+    /* 20px */
+    --font-size-lg: 1.25rem;
+    /* 28px */
+    --font-size-xl: 1.75rem;
+    /* 40px */
+    --font-size-2xl: 2.5rem;
+
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 700;
+
+    line-height: 1.5;
+
+    /* spacing */
+    /* 0.125rem */
+    --space-3xs: 2px;
+    /* 0.25rem */
+    --space-2xs: 4px;
+    /* 0.5rem */
+    --space-xs: 8px;
+    /* 0.75rem */
+    --space-sm: 12px;
+    /* 1rem */
+    --space-md: 16px;
+    /* 1.5rem */
+    --space-lg: 24px;
+    /* 2rem */
+    --space-xl: 32px;
+    /* 3rem */
+    --space-2xl: 48px;
+    /* 4rem */
+    --space-3xl: 64px;
+
+}
+
+* {
+  font-family: var(--font-family);
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  line-height: var(--line-height);
+}
+
+
+body {
+    background: var(--background-color);
+    color: var(--font-color);
+    font-family: var(--font-family);
+    font-size: var(--font-size-md);
+    line-height: var(--line-height);
+}
+
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     margin: 0;
+    font-weight: var(--font-weight-bold);
+}
+
+p {
+    margin: 0 0 var(--space-md);
 }
