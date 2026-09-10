@@ -21,7 +21,7 @@
 		</div>
 		<List {persons} />
 	</section>
-	<Details {personData} />
+	<Details {data} />
 </main>
 
 <style>
