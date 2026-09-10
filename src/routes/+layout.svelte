@@ -3,6 +3,7 @@
 	import "../app.css";
 	import List from "$lib/components/List.svelte";
 	import Topbar from "$lib/components/Topbar.svelte";
+	import Details from "$lib/components/details.svelte";
 
 	let { children, data } = $props();
 	const persons = data.persons;
@@ -20,6 +21,7 @@
 		</div>
 		<List {persons} />
 	</section>
+	<Details {personData} />
 </main>
 
 <style>
