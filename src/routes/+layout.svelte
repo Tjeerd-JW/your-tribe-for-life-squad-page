@@ -2,6 +2,7 @@
 	import favicon from "$lib/assets/favicon.svg";
 	import "../app.css";
 	import List from "$lib/components/List.svelte";
+	import Topbar from "$lib/components/Topbar.svelte";
 
 	let { children, data } = $props();
 	const persons = data.persons;
@@ -13,7 +14,7 @@
 
 <main>
 	<section class="select-screen">
-		<h1 class="name">Choose your character</h1>
+		<Topbar title="Choose your character" />
 		<div class="detail-content">
 			{@render children()}
 		</div>
@@ -25,9 +26,7 @@
 	.select-screen {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
-		h1 {
-			grid-column: 1/-1;
-		}
+
 		.detail-content {
 			grid-column: 1 /-1;
 			@media (min-width: 950px) {
