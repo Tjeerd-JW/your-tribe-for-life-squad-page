@@ -2,6 +2,7 @@
 	import favicon from "$lib/assets/favicon.svg";
 	import "../app.css";
 	import List from "$lib/components/List.svelte";
+	import Details from "$lib/components/details.svelte";
 
 	let { children, data } = $props();
 	const persons = data.persons;
@@ -19,6 +20,7 @@
 		</div>
 		<List {persons} />
 	</section>
+	<Details {personData} />
 </main>
 
 <style>
