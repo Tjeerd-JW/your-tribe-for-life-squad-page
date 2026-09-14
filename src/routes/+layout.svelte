@@ -3,7 +3,7 @@
 	import "../app.css";
 	import List from "$lib/components/List.svelte";
 	import Topbar from "$lib/components/Topbar.svelte";
-	import Details from "$lib/components/details.svelte";
+	import Details from "$lib/components/Details.svelte";
 
 	let { children, data } = $props();
 	const persons = data.persons;
