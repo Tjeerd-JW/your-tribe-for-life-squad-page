@@ -7,6 +7,7 @@
 
 	let { children, data } = $props();
 	const persons = data.persons;
+	const person = data.person;
 </script>
 
 <svelte:head>
@@ -21,7 +22,7 @@
 		</div>
 		<List {persons} />
 	</section>
-	<Details {data} />
+	<Details {person} />
 </main>
 
 <style>
