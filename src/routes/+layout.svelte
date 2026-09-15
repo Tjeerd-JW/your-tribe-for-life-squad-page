@@ -11,7 +11,7 @@
 </script>
 
 <svelte:head>
-	<link rel="icon" href={favicon} />
+	<link rel="icon" href={favicon}>
 </svelte:head>
 
 <main>
