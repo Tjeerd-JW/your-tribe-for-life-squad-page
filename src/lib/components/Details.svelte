@@ -37,6 +37,7 @@
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr 1fr;
 		gap: var(--space-xs);
+		padding: var(--space-xs);
 
 		p {
 			grid-row: span 2;
@@ -47,6 +48,17 @@
 		.person-links {
 			grid-row: 1;
 			grid-column: 2;
+			display: flex;
+			align-items: baseline;
+			gap: var(--space-xs);
+
+			a,
+			p {
+				border: var(--space-3xs) solid var(--font-color);
+				width: fit-content;
+				padding: var(--space-3xs);
+				border-radius: var(--space-xs);
+			}
 		}
 	}
 </style>
