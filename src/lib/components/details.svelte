@@ -20,7 +20,7 @@
 	{/if}
 	{#if person.github_handle}
 		<a href="https://github.com/{person.github_handle}" target="_blank">
-			{person.github_handle}
+			github
 		</a>
 	{:else}
 		<p>geen github naam ingevuld</p>
