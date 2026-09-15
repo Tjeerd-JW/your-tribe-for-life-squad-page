@@ -3,17 +3,15 @@
 </script>
 
 <footer>
-	<div>
-		<p>
-			{person.bio ?? "ik heb geen bio ingevuld"}
-		</p>
-		<p>
-			{person.fav_hobby ?? "geen hobbies"}
-		</p>
-		<p>
-			{person.fav_game ?? "geen favoriete game"}
-		</p>
-	</div>
+	<p>
+		{person.bio ?? "ik heb geen bio ingevuld"}
+	</p>
+	<p>
+		hobby: {person.fav_hobby ?? "geen hobbies"}
+	</p>
+	<p>
+		game: {person.fav_game ?? "geen favoriete game"}
+	</p>
 
 	{#if person.website}
 		<a href={person.website} target="_blank">website</a>
