@@ -24,7 +24,7 @@ html {
     --font-weight-medium: 500;
     --font-weight-bold: 700;
 
-    line-height: 1.5;
+    --line-height: 1.5;
 
     /* spacing */
     /* 0.125rem */
@@ -49,11 +49,11 @@ html {
 }
 
 * {
-  font-family: var(--font-family);
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  line-height: var(--line-height);
+    font-family: var(--font-family);
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    line-height: var(--line-height);
 }
 
 
@@ -78,4 +78,13 @@ h6 {
 
 p {
     margin: 0 0 var(--space-md);
+}
+
+.person-details {
+    display: grid;
+    justify-items: center;
+
+    h2 {
+        font-size: var(--font-size-xl);
+    }
 }
