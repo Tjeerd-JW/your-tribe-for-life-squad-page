@@ -7,7 +7,8 @@
 
 	let { children, data } = $props();
 	const persons = data.persons;
-	const person = data.person;
+	const person = $derived(data.person);
+	console.log(person)
 </script>
 
 <svelte:head>
