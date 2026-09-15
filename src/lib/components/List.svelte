@@ -15,14 +15,14 @@
                         alt="foto van {person.name}"
                         width="150"
                         height="150"
-                    />
+                    >
                 {:else}
                     <img
                         src="https://static.wikia.nocookie.net/overwatch_gamepedia/images/8/86/Icon-Lifeweaver.png/revision/latest/scale-to-width-down/250?cb=20230411181321"
                         alt="foto van {person.name}"
                         width="150"
                         height="150"
-                    />
+                    >
                 {/if}
             </a>
         </li>
