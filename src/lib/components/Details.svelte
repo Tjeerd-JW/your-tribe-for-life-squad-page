@@ -29,3 +29,24 @@
 		{/if}
 	</div>
 </footer>
+
+<style>
+	footer {
+		background: var(--triary-color);
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 1fr 1fr;
+		gap: var(--space-xs);
+
+		p {
+			grid-row: span 2;
+			align-content: center;
+		}
+		.person-facts {
+		}
+		.person-links {
+			grid-row: 1;
+			grid-column: 2;
+		}
+	}
+</style>
