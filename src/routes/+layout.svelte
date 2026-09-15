@@ -15,14 +15,16 @@
   <title>Squadpage</title>
 </svelte:head>
 
-<section class="select-screen">
-  <Topbar title="Choose your character" />
-  <div class="detail-content">
-    {@render children()}
-  </div>
-  <List {persons} />
-</section>
-<Details {person} />
+<main>
+  <section class="select-screen">
+    <Topbar title="Choose your character" />
+    <div class="detail-content">
+      {@render children()}
+    </div>
+    <List {persons} />
+  </section>
+  <Details {person} />
+</main>
 
 <style>
   .select-screen {
@@ -36,5 +38,10 @@
         grid-column: 1;
       }
     }
+  }
+
+  .detail-content {
+    display: flex;
+    justify-content: space-evenly;
   }
 </style>
