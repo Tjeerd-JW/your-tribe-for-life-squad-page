@@ -6,9 +6,9 @@
 <main class="person-details">
   <section>
     {#if person.nickname}
-      <h1>{person.nickname}</h1>
+      <h2>{person.nickname}</h2>
     {:else}
-      <h1>ik heb geen nickname</h1>
+      <h2>ik heb geen nickname</h2>
     {/if}
 
     {#if person.mugshot}
