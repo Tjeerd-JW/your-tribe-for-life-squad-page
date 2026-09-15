@@ -5,9 +5,9 @@
   import Topbar from "$lib/components/Topbar.svelte";
   import Details from "$lib/components/Details.svelte";
 
-  let { children, data } = $props();
-  const persons = data.persons;
-  const person = data.person;
+	let { children, data } = $props();
+	const persons = data.persons;
+	const person = $derived(data.person);
 </script>
 
 <svelte:head>
