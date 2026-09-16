@@ -54,10 +54,13 @@
 
 			a,
 			p {
-				border: var(--space-3xs) solid var(--font-color);
+				border: 1px solid var(--font-color);
 				width: fit-content;
-				padding: var(--space-3xs);
+				padding: var(--space-3xs) var(--space-xs);
 				border-radius: var(--space-xs);
+				background-color: var(--background-color);
+				text-decoration: none;
+				color: var(--font-color);
 			}
 		}
 	}
