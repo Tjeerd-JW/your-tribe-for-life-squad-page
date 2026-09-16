@@ -44,6 +44,12 @@
 			align-content: center;
 		}
 		.person-facts {
+			p {
+				border: 1px solid var(--font-color);
+				border-radius: var(--space-3xl);
+				padding: var(--space-3xs) var(--space-xs);
+				width: fit-content;
+			}
 		}
 		.person-links {
 			grid-row: 1;
