@@ -33,15 +33,19 @@
 <style>
 	footer {
 		background: var(--triary-color);
-		display: grid;
-		grid-template-columns: 1fr 1fr;
-		grid-template-rows: 1fr 1fr;
-		gap: var(--space-xs);
-		padding: var(--space-xs);
+		padding: var(--space-md);
+
+		@media (min-width: 700px) {
+			display: grid;
+			column-gap: 5em;
+			grid-template-columns: 1fr 1fr;
+			grid-template-rows: 1fr 1fr;
+		}
 
 		p {
 			grid-row: span 2;
 			align-content: center;
+			max-width: 60ch;
 		}
 		.person-facts {
 			p {
