@@ -98,7 +98,7 @@ Voor dit project hebben we veel gewerkt met componenten om de opbouw makkelijk t
 
 ## Codeconventies
 
-Voor de codeconventies gebruikten wij de standaard svelte regels.
+Voor de codeconventies volgen wij de [fdnd code conventions](https://docs.fdnd.nl/conventies.html#code-conventies)
 
 ## Afspraken samenwerken
 
