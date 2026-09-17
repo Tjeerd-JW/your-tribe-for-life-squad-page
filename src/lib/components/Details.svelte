@@ -32,7 +32,7 @@
 
 <style>
 	footer {
-		background: var(--triary-color);
+		background: var(--tertiary-color);
 		padding: var(--space-md);
 
 		@media (min-width: 700px) {
