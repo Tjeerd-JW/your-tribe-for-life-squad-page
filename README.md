@@ -62,9 +62,39 @@ De website is eenvoudig te gebruiken selecteer iemand uit de lijst en je kunt hu
 
 ## Bronnen
 
+inspiratie design
+- [squadpage](https://nycsquadpage.netlify.app/characters)
+- [mario kart](https://www.reddit.com/r/mariokart/comments/1jf49wz/made_another_character_select_ui_concept_some/)
+- [multiversus](https://www.reddit.com/r/MultiVersus/comments/1ft7t6a/character_select_screen_ui/)
+
 ## Designkeuzes
 
+We hebben gekozen voor een vrij minimalistisch design met iedereen in een overzicht aan de zijkant (of onderkant op mobiel). In de footer laten we dan wat informatie zien over de student met twee buttons naar hun eigen website en GitHub-profiel. Omdat we er nog niet uitkwamen met de kleuren hebben we het design met grijstinten gemaakt om later nog te beslissen over de kleuren die we wilden gebruiken. Uiteindelijk zijn we tot de kleuren van het oude design gekomen en het formaat van het nieuwste design gelaten. In dit issue zijn de verschillende versies weergegeven: [Issue #4](https://github.com/Tjeerd-JW/your-tribe-for-life-squad-page/issues/4)
+
+### Design desktop
+
+![design desktop](src/lib/img/designdesktop.png)
+
+### Design mobile
+
+![design mobile](src/lib/img/designmobile.png)
+
 ## Kenmerkende code
+
+Voor dit project hebben we veel gewerkt met componenten om de opbouw makkelijk te maken.
+
+```html
+<main>
+  <section class="select-screen">
+    <Topbar title="Choose your character" />
+    <div class="detail-content">
+      {@render children()}
+    </div>
+    <List {persons} />
+  </section>
+  <Details {person} />
+</main>
+```
 
 ## Codeconventies
 
